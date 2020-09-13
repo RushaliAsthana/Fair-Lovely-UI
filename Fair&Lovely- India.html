@@ -1,0 +1,885 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+ <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+ <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+ <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600&family=DM+Serif+Display&display=swap" rel="stylesheet">
+ <link rel="stylesheet" href="styles.css">
+ <script src="scripts.js"></script>
+ <title>Fair & Lovely-India</title>
+</head>
+<body >
+ 
+  <div class="overlay "></div>
+ <div class="container-fluid mt-3 navigation">
+  <div class="row">
+   <div class="col-sm-2 ">
+    <img class="img-fluid" id="logo" src="https://www.fairandlovely.ae/wp-content/uploads/sites/15/2015/10/xlogo.png.pagespeed.ic.SUpj3Z7W9h.png">
+   </div>
+   <div class="col-sm-10">
+   <span id="tophead" class="d-none d-lg-block d-xl-block d-md-block"> FAIRNESS EXPERT </span>
+   <nav class="navbar navbar-expand-md navigation-bg mt-2 d-none d-lg-block d-xl-block d-md-block website-nav">
+  
+    <!-- Toggler/collapsibe Button -->
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+     <i class="fa fa-bars" style="color:white"></i> 
+    </button>
+    <!-- Navbar links -->
+    <span class="mr-auto ml-3 theme-white d-xl-none d-md-none"><B>FAIRNESS EXPERT</B></span>
+    <div class="collapse navbar-collapse" id="collapsibleNavbar">
+      <ul class="navbar-nav">
+       <li class="nav-item">
+        <a class="nav-link " href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        FAIRNESS SOLUTIONS <i class="fa fa-caret-down" aria-hidden="true"></i>
+        </a>
+      </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#" id="navbarDropdownMenuLink1" data-toggle="dropdown" aria-haspopup="true">FAIRNESS TALK <i class="fa fa-caret-down" aria-hidden="true"></i></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#" id="navbarDropdownMenuLink2"data-toggle="dropdown" aria-haspopup="true">OUR TECHNOLOGY <i class="fa fa-caret-down" aria-hidden="true"></i></a>
+        </li>
+        <li class="nav-item">
+         <a class="nav-link" href="#" id="navbarDropdownMenuLink3"data-toggle="dropdown" aria-haspopup="true">OUR PURPOSE <i class="fa fa-caret-down" aria-hidden="true"></i></a>
+       </li>
+      </ul>
+      <ul class="navbar-nav ml-auto">
+
+        <li class="nav-item dropleft">
+          <a class="nav-link dropdown-toggle" href="#"  data-toggle="dropdown" id="user">
+            <i class="fa fa-user-circle" aria-hidden="true"></i>
+          </a>
+          <div class="dropdown-menu" id="acc-manager">
+            <h6 class="dropdown-header">Welcome, Lisa</h6>
+            
+            <a class="dropdown-item" href="#"><i class="fa fa-shopping-cart" aria-hidden="true"></i> Your Cart</a>
+            <a class="dropdown-item" href="#"><i class="fa fa-heart" aria-hidden="true"></i> Your WishList</a>
+            <a class="dropdown-item" href="#"><i class="fa fa-list" aria-hidden="true"></i> Your Orders</a>
+            <a class="dropdown-item" href="#"><i class='fas fa-money-check-alt'></i> Your Purchases</a>
+            <a class="dropdown-item" href="#"><i class="fa fa-question" aria-hidden="true"></i> FAQ</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#"  data-toggle="modal" data-target="#loginmodal">Login/SignUp</a>
+            <a class="dropdown-item" href="#">Sign Out</a>
+          </div>
+        </li>
+      </ul>
+      
+    </div>
+  </nav>
+<!--Mobile Screen Navbar-->
+  <nav class="navbar navbar-expand-md navigation-bg mt-2 d-xl-none d-md-none">
+    <button type="button" id="sidebarCollapse" class="btn border  ">
+      <i class="fa fa-bars theme-white" aria-hidden="true"></i> 
+  </button>
+ <span class="mr-auto ml-3 theme-white d-xl-none d-md-none"> <B>FAIRNESS EXPERT</B></span>
+  <ul class="navbar-nav ml-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="#"><i class="fa fa-shopping-cart mr-3" aria-hidden="true"></i></a>
+  </li>
+</ul>
+  </nav>
+
+<!--Sidebar-->
+
+  <nav id="sidebar">
+    <div id="dismiss">
+      <i class="fa fa-arrow-left" aria-hidden="true"></i>
+    </div>
+
+    <div class="sidebar-header">
+        <img src="https://mcmscache.epapr.in/post_images/website_350/post_16967220/full.jpg" class="img-fluid">
+      </div>
+      
+      <ul class="list-unstyled components ">
+        <button class="btn  text-center ml-2" id="login-btn"  data-toggle="modal" data-target="#loginmodal">Login/SignUp</button>
+        <h6 class="text-center theme-white">or</h6>
+        <button class="btn  text-center ml-2" id="login-btn">Sign Out</button><br><br>
+        <li>
+          <span> MANAGE ACCOUNT</span>
+            <a href="#"  style="font-size:15px"><i class="fa fa-heart" aria-hidden="true"></i> Your WishList</a>
+        </li>
+        <li>
+            <a href="#"  style="font-size:15px"><i class="fa fa-list" aria-hidden="true"></i> Your Orders</a>
+        </li>
+        <li>
+          <a href="#"  style="font-size:15px"><i class='fas fa-money-check-alt'></i> Your Purchases</a>
+      </li>
+      <li>
+        <a href="#"  style="font-size:15px"><i class="fa fa-question-circle" aria-hidden="true"></i> FAQ's</a>
+    </li>
+        <li >
+          <span> FAIRNESS SOLUTIONS </span>
+            <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false"  style="font-size:15px">Cleansing <i class="fa fa-caret-down" aria-hidden="true"></i></a>
+            <ul class="collapse list-unstyled" id="homeSubmenu">
+                <li>
+                    <a href="#">Advance Multi Vitamin Face wash</a>
+                </li>
+                <li>
+                    <a href="#">Pimple Off Facewash</a>
+                </li>
+            </ul>
+        </li>
+        <li>
+            <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false"  style="font-size:15px">Daily Treatment <i class="fa fa-caret-down" aria-hidden="true"></i></a>
+            <ul class="collapse list-unstyled" id="pageSubmenu">
+                <li><a href="#">Advance Multi Vitamin Face wash</a></li>
+                <li> <a href="#">Advance Multi Vitamin SPF 15 Cream</a></li>
+                <li><a href="#">Antimarks Cream</a></li>
+                <li><a href="#">Herbal Balance Cream</a></li>
+                <li><a href="#">Moisture Plus Multivitamin Cream</a></li>
+            </ul>
+        </li>
+        <li >
+            <a href="#menSubmenu" data-toggle="collapse" aria-expanded="false"  style="font-size:15px">Men's Solution <i class="fa fa-caret-down" aria-hidden="true"></i></a>
+            <ul class="collapse list-unstyled" id="menSubmenu">
+                <li>
+                    <a href="#">MAX Fairness Multi-Expert Cream</a>
+                </li>
+            </ul>
+        </li>
+        <li>
+          <span> FAIRNESS TALK</span>
+            <a href="#"  style="font-size:15px">Beauty On Duty</a>
+        </li>
+        <li>
+            <a href="#"  style="font-size:15px">Ask The Experts</a>
+        </li>
+        <li>
+          <span>OUR TECHNOLOGY</span>
+          <a href="#"  style="font-size:15px">Smart Fairness Clinic</a>
+      </li>
+      <li>
+        <a href="#"  style="font-size:15px">Skin Science</a>
+    </li>
+      <li>
+        <span>OUR PURPOSE</span>
+        <a href="#"  style="font-size:15px">Our Story</a>
+    </li>
+    <li>
+      <a href="#"  style="font-size:15px">Fair & Lovely Foundation</a>
+  </li>
+    </ul>
+</nav>
+
+<!--Navbar dropdowns-->
+  <div class="card" id="firstdropdown">
+   <div class="card-body">
+    <div class="row">
+    <div class="col">
+    <span class="dropdown-header">CLEANSING</span>
+          <a class="dropdown-item" href="#">Advance Multi Vitamin Face wash</a>
+          <a class="dropdown-item" href="#">Pimple Off Facewash</a>
+          <span class="dropdown-header">DAILY TREATMENT</span>
+          <a class="dropdown-item" href="#">Advance Multi Vitamin Face wash</a>
+          <a class="dropdown-item" href="#">Advance Multi Vitamin SPF 15 Cream</a>
+          <a class="dropdown-item" href="#">Antimarks Cream</a>
+          <a class="dropdown-item" href="#">Herbal Balance Cream</a>
+          <a class="dropdown-item" href="#">Moisture Plus Multivitamin Cream</a>
+     </div>
+     <div class="col">
+      <span class="dropdown-header">MEN'S SOLUTION</span>
+            <a class="dropdown-item" href="#">MAX Fairness Multi-Expert Cream</a>
+       </div>
+    </div>
+   </div>
+  </div>
+  <div class="card" id="seconddropdown">
+    <div class="card-body">
+     <a class="dropdown-item" href="#">Beauty On Duty</a>
+     <a class="dropdown-item" href="#">Ask The Expert</a>
+    </div>
+   </div>
+  
+  <div class="card" id="thirddropdown">
+   <div class="card-body">
+    <a class="dropdown-item" href="#">Smart Fairness Clinic</a>
+    <a class="dropdown-item" href="#">Skin Science</a>
+   </div>
+  </div>
+  <div class="card" id="fourthdropdown">
+    <div class="card-body">
+     <a class="dropdown-item" href="#">Our Story</a>
+     <a class="dropdown-item" href="#">Fair & Lovely Foundation</a>
+    </div>
+   </div>
+   </div>
+  </div>
+ </div>
+ 
+ 
+
+
+<!-- jQuery Custom Scroller CDN -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.concat.min.js"></script>
+
+<div id="demo" class="carousel slide mt-4 d-none d-sm-block d-md-block d-lg-block d-xl-block" data-ride="carousel">
+
+  <!-- Indicators -->
+  <ul class="carousel-indicators">
+    <li data-target="#demo" data-slide-to="0" class="active"></li>
+    <li data-target="#demo" data-slide-to="1"></li>
+    <li data-target="#demo" data-slide-to="2"></li>
+    <li data-target="#demo" data-slide-to="3"></li>
+  </ul>
+  
+  <!-- The slideshow -->
+  <div class="carousel-inner ">
+    <div class="carousel-item active">
+      <img class="img-fluid" src="https://www.fairandlovely.ae/wp-content/uploads/sites/15/2016/01/blue-lens2_min.jpg" alt="Los Angeles" width="1100" height="500">
+      <div class="carousel-caption  ">
+        <span style="font-family: 'Cinzel', serif;" >FAIRNESS EQUAL TO EXPERT TREATMENT</span><br><br>
+        <span id="carousel-moves">Take the Blue Lens Challenge <i class="fa fa-angle-right fa-lg" aria-hidden="true"></i></span>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img class="img-fluid" src="https://www.fairandlovely.ae/wp-content/uploads/sites/15/2016/01/xface-wash_desktop_min.jpg.pagespeed.ic.WRZCBQMW1f.jpg" alt="Chicago" width="1100" height="500">
+      <div class="carousel-caption  ">
+        <span style="font-family: 'Cinzel', serif;">FAIRNESS LIKE SALON FACIAL</span><br><br>
+        <span id="carousel-moves" >Find Out More <i class="fa fa-angle-right  fa-lg" aria-hidden="true"></i></span>
+      </div>
+    </div>
+    <div class="carousel-item">
+          <img class="img-fluid" src="https://www.fairandlovely.ae/wp-content/uploads/sites/15/2016/10/xupdated-en.jpg.pagespeed.ic.W8sxpj8o0t.jpg" alt="New York" width="1100" height="500">
+          <div class="carousel-caption  ">
+        <span id="men-carousel" >Find Out More <i class="fa fa-angle-right  fa-lg" aria-hidden="true"></i></span>
+          </div>
+    </div>
+    <div class="carousel-item">
+      <img class="img-fluid" src="https://www.fairandlovely.ae/wp-content/uploads/sites/15/2016/01/webapp_min.jpg" alt="Chicago" width="1100" height="500">
+      <div class="carousel-caption  ">
+        <span id="last-slide" style="font-family: 'Cinzel', serif;">SEE HOW OUR TREATMENT LIKE FAIRNESS <br> TRANSFORM YOUR SKIN</span><br><br>
+        <span id="last-slide-cap">Try It Now <i class="fa fa-angle-right" aria-hidden="true"></i></span>
+      </div>
+    </div>
+  </div>
+  
+  <a class="carousel-control-prev" href="#demo" data-slide="prev">
+    <span class="fa fa-angle-double-left fa-3x"></span>
+  </a>
+  <a class="carousel-control-next" href="#demo" data-slide="next">
+    <span class="fa fa-angle-double-right fa-3x"></span>
+  </a>
+</div>
+
+ <div class="container-fluid mt-4  d-block d-sm-none mobile-top">
+ </div>
+<div class=" mr-4 fixed-bottom">
+ <button class="btn " onclick="topFunction()" id="top">Top <i class="fa fa-arrow-up" aria-hidden="true"></i></button>
+</div>
+ <br><br> 
+
+ <!--Cards for mobile-->
+
+ <div class="jumbotron d-xl-none " id="products" >
+   <br><br>
+  <h1 class="text-center theme-white  text-shadow " id="exp-bg" style="font-family: 'Cinzel', serif;" >EXPERT FAIRNESS SOLUTIONS</h1><br><br>
+ <div class="container">
+ <div class="row">
+   <div class="col-sm-4">
+     <div class="card expert-1 " data-toggle="modal" data-target="#exampleModalLong" >
+       <div class="card-body  ">
+         <img src="https://www.fairandlovely.ae/wp-content/uploads/sites/15/2015/12/cleansing.png" class="img-fluid">
+         <p class="text-center mt-3">CLEANSING</p>
+       </div>
+      </div>
+      
+        
+   </div>
+   <div class="col-sm-4">
+    <div class="card expert-2" data-toggle="modal" data-target="#exampleModalLong1">
+      <div class="card-body">
+        <img src="https://www.fairandlovely.ae/wp-content/uploads/sites/15/2016/01/categories-daily_routine420by420_min.png" class="img-fluid">
+        <p class="text-center mt-3">DAILY TREATMENT</p>
+      </div>
+      
+    </div>
+  </div>
+  <div class="col-sm-4">
+    <div class="card expert-3  " data-toggle="modal" data-target="#exampleModalLong2">
+      <div class="card-body">
+        <img src="https://www.fairandlovely.ae/wp-content/uploads/sites/15/2016/09/product-max_fairness-moisturizer_min.png" class="img-fluid">
+        <p class="text-center mt-3">MEN'S SOLUTION</p>
+      </div>
+    </div>
+  </div>
+ 
+ </div>
+ </div>
+</div>
+
+<!--Cards for website-->
+<div class="jumbotron d-none d-xl-block " id="products">
+  <br><br>
+ <h1 class="text-center theme-white  text-shadow " id="exp-bg" style="font-family: 'Cinzel', serif;" >EXPERT FAIRNESS SOLUTIONS</h1><br><br>
+<div class="container">
+<div class="row">
+  <div class="col-sm-4">
+    <div class="card expert-1 front " >
+      <div class="card-body  ">
+        <img src="https://www.fairandlovely.ae/wp-content/uploads/sites/15/2015/12/cleansing.png" class="img-fluid">
+        <p class="text-center mt-3">CLEANSING</p>
+      </div>
+      <div class=" back expert-1 d-none d-xl-block ">
+      <div class="card-body ">
+       <h5 class="text-center mt-3">CLEANSING</h5>
+       <p>The first step to maintaining your skin is to Cleanse your Skin Throughly. And for this 
+         we provide the finest Solution. <br>FAIR & LOVELY FACEWASH </p><br>
+         
+        <button class="btn btn-primary btn-block" data-toggle="modal" data-target="#exampleModalLong" >View Products</button>
+     </div>
+     </div>
+     </div>
+
+  </div>
+  <div class="col-sm-4">
+   <div class="card expert-2 front">
+     <div class="card-body">
+       <img src="https://www.fairandlovely.ae/wp-content/uploads/sites/15/2016/01/categories-daily_routine420by420_min.png" class="img-fluid">
+       <p class="text-center mt-3">DAILY TREATMENT</p>
+     </div>
+     <div class=" back expert-1 d-none d-xl-block ">
+       <div class="card-body ">
+        <h5 class="text-center mt-3">DAILY TREATMENT</h5>
+        <p> Spending lots of money on hospitals? Well now you dont need to. Just buy our Daily Treatment products and get salon like results at home </p><br>
+          
+         <button class="btn btn-primary btn-block" data-toggle="modal" data-target="#exampleModalLong1">View Products</button>
+      </div>
+      </div>
+     
+   </div>
+ </div>
+ <div class="col-sm-4">
+   <div class="card expert-3 front ">
+     <div class="card-body">
+       <img src="https://www.fairandlovely.ae/wp-content/uploads/sites/15/2016/09/product-max_fairness-moisturizer_min.png" class="img-fluid">
+       <p class="text-center mt-3">MEN'S SOLUTION</p>
+     </div>
+     <div class=" back expert-1 d-none d-xl-block ">
+       <div class="card-body ">
+        <h5 class="text-center mt-3">MEN'S SOLUTION</h5>
+        <p> If your a man you must be be thinking we have nothing in store for you?
+          Well your wrong, Fair & Lovely brings you Men's Solution. Go! View your products </p><br>
+          
+         <button class="btn btn-primary btn-block" data-toggle="modal" data-target="#exampleModalLong2">View Products</button>
+      </div>
+      </div>
+   </div>
+ </div>
+
+</div>
+</div>
+</div>
+
+<!-- Modal 1 -->
+<div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-full-width" role="document">
+    <div class="modal-content modal-content-full-width">
+      <div class="modal-body " id="expert-mod-1">
+            
+            <button type="button" class="modal-close position-fixed " data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true" style="font-size: 50px;">&times;</span>
+            </button>
+  
+          <div class="container">
+            <h1 class="text-center text-shadow" style="font-family: 'Cinzel', serif; color:black">Cleansing</h1><br>
+            <div class="row " id="internal-card">
+            <div class="col-sm-6 text-center">
+              <img src="https://www.fairandlovely.ae/wp-content/uploads/sites/15/2016/01/categories-cleansing420by420_min.png" class="img-fluid">
+              <div style="background-color: #cc0066;">MRP :- Rs 190</div>
+            </div>
+            <div class="col-sm-6 padding-for-modal">
+            <h3 class="text-shadow"> <span class="badge badge-danger">1</span> ADVANCED MULTIVITAMIN FACEWASH</h3><br>
+            <button class="btn" id="product-btn"><i class="fa fa-shopping-cart" aria-hidden="true" ></i> Add To Cart</button> <button class="btn"  id="product-btn"><i class="fa fa-heart" aria-hidden="true"></i> Add To WishList</button>
+            <button class="btn"  id="product-btn"  data-toggle="collapse" data-target="#demo"><i class="fa fa-video"></i> Watch Video</button>
+            <br><br>
+            <div  id="demo" class="row collapse">
+              <iframe width="90%" class="ml-3" height="280px" src="https://www.youtube.com/embed/jJdOMQRZBCM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              </div>
+            <p>Fairness like a salon facial, everyday
+              Fair & Lovely Advanced Multi Vitamin Face Wash gives you the 3 step expert action, which Cleanses, Exfoliates and Massages with Multivitamin formula.
+              </p>
+              <h4 class="text-shadow">BENEFITS</h4>
+              <p><i class="fa fa-check-circle" aria-hidden="true"></i> Removes Dirt and Pollution from deep within the skin </p>
+              <p><i class="fa fa-check-circle" aria-hidden="true"></i> Exfoliates to remove dead skin cells</p>
+              <p><i class="fa fa-check-circle" aria-hidden="true"></i> Gives you a fair look instantly </p>
+              <button class="btn" id="see-more-btn">Go See More <i class="fa fa-angle-double-right fa-lg mt-1 ml-2 " style="color:black"></i> </button><br><br>
+            </div>
+          </div>
+          <br>
+          <div class="row border" id="internal-card">
+            <div class="col-sm-6 text-center">
+              <img src="https://www.fairandlovely.ae/wp-content/uploads/sites/15/2016/08/Facewash_Pakistan_Green_Splash-420x420.png" class="img-fluid">
+              <div style="background-color: #cc0066;">MRP :- Rs 200</div>
+            </div>
+            <div class="col-sm-6 padding-for-modal">
+            <h3 class="text-shadow"><span class="badge badge-danger">2</span> PIMPLE OFF FAIRNESS FACE WASH</h3><br>
+            <button class="btn" id="product-btn"><i class="fa fa-shopping-cart" aria-hidden="true"></i> Add To Cart</button> <button class="btn"  id="product-btn"><i class="fa fa-heart" aria-hidden="true"></i> Add To WishList</button>
+            <button class="btn"  id="product-btn"  data-toggle="collapse" data-target="#demo1"><i class="fa fa-video"></i> Watch Video</button><br><br>
+            <div  id="demo1" class="row collapse">
+              <iframe width="90%" class="ml-3" height="280px" src="https://www.youtube.com/embed/-wH4_4PjigE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              </div>
+            <p>Pimples off Fairness On
+              Your daily clean up that blocks dark pigments and prevents them from spreading. Fades current pimple spots & Prevents pimples from coming back.              
+              </p>
+              <h4 class="text-shadow">BENEFITS</h4>
+              <p><i class="fa fa-check-circle" aria-hidden="true"></i> Removes 99% pimple germs</p>
+              <p><i class="fa fa-check-circle" aria-hidden="true"></i> Gives you fairer looking skin</p>
+              <p><i class="fa fa-check-circle" aria-hidden="true"></i> Prevents pimples by removing excess oil</p>
+              <button class="btn" id="see-more-btn">Go See More <i class="fa fa-angle-double-right fa-lg mt-1 ml-2 " style="color:black"></i> </button><br><br>
+            </div>
+          </div>
+         
+          </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+<!-- Modal 2 -->
+<div class="modal fade" id="exampleModalLong1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-full-width" role="document">
+    <div class="modal-content modal-content-full-width">
+      <div class="modal-body" id="expert-mod-2">
+        <button type="button" class="modal-close position-fixed " data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true" style="font-size: 50px;">&times;</span>
+        </button>
+          <div class="container">
+            <h1 class="text-center text-shadow" style="font-family: 'Cinzel', serif; color:black">Daily Treatment</h1><br>
+            <div class="row border" id="internal-card">
+            <div class="col-sm-6 text-center">
+              <img src="https://www.fairandlovely.ae/wp-content/uploads/sites/15/2016/09/product-advanced_multivitamin-box_min.png" class="img-fluid">
+              <div style="background-color: #cc0066;">MRP :- Rs 190</div>
+            </div>
+            <div class="col-sm-6 padding-for-modal">
+            <h3 class="text-shadow"><span class="badge badge-danger">1</span> ADVANCED MULTIVITAMIN CREAM</h3><br>
+            <button class="btn" id="product-btn"><i class="fa fa-shopping-cart" aria-hidden="true"></i> Add To Cart</button> <button class="btn"  id="product-btn"><i class="fa fa-heart" aria-hidden="true"></i> Add To WishList</button>
+            <button class="btn"  id="product-btn"  data-toggle="collapse" data-target="#demo2"><i class="fa fa-video"></i> Watch Video</button><br><br>
+            <div  id="demo2" class="row collapse">
+              <iframe width="90%" class="ml-3" height="280px" src="https://www.youtube.com/embed/k41VdY6l2t4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              </div>
+            <br><br>
+            <p>For treatment like fairness, instantly 
+              For clinically proven, unbeatable fairness instantly and over time. Use twice daily for best fairness results.              
+              </p>
+
+            
+              <h4 class="text-shadow">BENEFITS</h4>
+              <p><i class="fa fa-check-circle" aria-hidden="true"></i> Gives fairer, even toned skin </p>
+              <p><i class="fa fa-check-circle" aria-hidden="true"></i> Reduces blemishes, marks and dark circles</p>
+              <p><i class="fa fa-check-circle" aria-hidden="true"></i> Triple sunscreens to protect from sun </p>
+              <button class="btn" id="see-more-btn">Go See More <i class="fa fa-angle-double-right fa-lg mt-1 ml-2 " style="color:black"></i> </button><br><br>
+            </div>
+          </div>
+          <br>
+          <div class="row border" id="internal-card">
+            <div class="col-sm-6 text-center">
+              <img src="https://www.fairandlovely.ae/wp-content/uploads/sites/15/2016/08/product-spf15-box_min.png" class="img-fluid">
+              <div style="background-color: #cc0066;">MRP :- Rs 190</div>
+            </div>
+            <div class="col-sm-6 padding-for-modal">
+            <h3 class="text-shadow"><span class="badge badge-danger">2</span> ADVANCED MULTI VITAMIN SPF 15 CREAM</h3><br>
+            <button class="btn" id="product-btn"><i class="fa fa-shopping-cart" aria-hidden="true"></i> Add To Cart</button> <button class="btn"  id="product-btn"><i class="fa fa-heart" aria-hidden="true"></i> Add To WishList</button>
+            <button class="btn"  id="product-btn"  data-toggle="collapse" data-target="#demo3"><i class="fa fa-video"></i> Watch Video</button><br><br>
+            <div  id="demo3" class="row collapse">
+              <iframe width="90%" class="ml-3" height="280px" src="https://www.youtube.com/embed/FnDCyh9SznU  " frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              </div>
+            <br><br>
+            <p>Unbeatable fairness for up to 5 hours
+              in the sun
+              Its revolutionary multi vitamin formula gives you treatment-like fairness and SPF 15 protects for up to 5 hours in the sun.              
+              </p>
+
+              <h4 class="text-shadow">BENEFITS</h4>
+              <p><i class="fa fa-check-circle" aria-hidden="true"></i> Get sun-protected fairness</p>
+              <p><i class="fa fa-check-circle" aria-hidden="true"></i> Achieve a lighter and even skin tone</p>
+              <p><i class="fa fa-check-circle" aria-hidden="true"></i> Diminish appearance of dark circles</p>
+              <button class="btn" id="see-more-btn">Go See More <i class="fa fa-angle-double-right fa-lg mt-1 ml-2 " style="color:black"></i> </button><br><br>
+            </div>
+          </div>
+         <br>
+         
+         <div class="row border" id="internal-card">
+          <div class="col-sm-6 text-center">
+            <img src="https://www.fairandlovely.ae/wp-content/uploads/sites/15/2016/11/xInd-296932-1.png.pagespeed.ic.Se0Rjm3_TC.png" class="img-fluid">
+            <div style="background-color: #cc0066;">MRP :- Rs 190</div>
+          </div>
+          <div class="col-sm-6 padding-for-modal">
+          <h3 class="text-shadow"><span class="badge badge-danger">3</span> ANTIMARKS CREAM</h3><br>
+          <button class="btn" id="product-btn"><i class="fa fa-shopping-cart" aria-hidden="true"></i> Add To Cart</button> <button class="btn"  id="product-btn"><i class="fa fa-heart" aria-hidden="true"></i> Add To WishList</button><br><br>
+          <p>For Blemish less fairer skin
+            The Vita-Aloe Complex™ with Vitamins B3 & E, Aloe Vera Concentrate & Fruit Principles, target blemished skin to effectively lighten marks & fight excessive pigmentation build-up.
+            </p>  
+            <h4 class="text-shadow">BENEFITS</h4>
+            <p><i class="fa fa-check-circle" aria-hidden="true"></i> Lightens blemishes, dark spots and marks</p>
+            <p><i class="fa fa-check-circle" aria-hidden="true"></i> Gives your skin an even tone</p>
+            <p><i class="fa fa-check-circle" aria-hidden="true"></i> Gives you fairer looking skin</p>
+            <button class="btn" id="see-more-btn">Go See More <i class="fa fa-angle-double-right fa-lg mt-1 ml-2 " style="color:black"></i> </button><br><br>
+          </div>
+        </div>
+        <br>
+        <div class="row border" id="internal-card">
+          <div class="col-sm-6 text-center">
+            <img src="https://www.fairandlovely.ae/wp-content/uploads/sites/15/2016/11/xInd-297209-1.png.pagespeed.ic.wdlAJJURwc.png" class="img-fluid">
+            <div style="background-color: #cc0066;">MRP :- Rs 190</div>
+          </div>
+          <div class="col-sm-6 padding-for-modal">
+          <h3 class="text-shadow"><span class="badge badge-danger">4</span> HERBAL BALANCE CREAM</h3><br>
+          <button class="btn" id="product-btn"><i class="fa fa-shopping-cart" aria-hidden="true"></i> Add To Cart</button> <button class="btn"  id="product-btn"><i class="fa fa-heart" aria-hidden="true"></i> Add To WishList</button><br><br>
+          <p>Get Fairer Looking Skin, naturally
+            Herbal balance is a natural fairness cream, with a powerful blend of 16 herbal ingredients known to restore natural balance and give you fairer looking skin naturally.
+          </p>  
+            <h4 class="text-shadow">BENEFITS</h4>
+            <p><i class="fa fa-check-circle" aria-hidden="true"></i> Soothes and relaxes your skin cells and gives you a fair look</p>
+            <p><i class="fa fa-check-circle" aria-hidden="true"></i> Makes your skin glow with visible radiance</p>
+            <p><i class="fa fa-check-circle" aria-hidden="true"></i> Conditions your skin, so it feels soft and moisturized</p>
+            <button class="btn" id="see-more-btn">Go See More <i class="fa fa-angle-double-right fa-lg mt-1 ml-2 " style="color:black"></i> </button><br><br>
+          </div>
+        </div>
+        <br>
+        <div class="row border" id="internal-card">
+          <div class="col-sm-6 text-center">
+            <img src="https://www.fairandlovely.ae/wp-content/uploads/sites/15/2016/11/xInd-297207-1.png.pagespeed.ic.nxouf9T-Yc.png" class="img-fluid">
+            <div style="background-color: #cc0066;">MRP :- Rs 190</div>
+          </div>
+          <div class="col-sm-6 padding-for-modal">
+          <h3 class="text-shadow"><span class="badge badge-danger">5</span> MOISTURE PLUS MULTIVITAMIN CREAM</h3><br>
+          <button class="btn" id="product-btn"><i class="fa fa-shopping-cart" aria-hidden="true"></i> Add To Cart</button> <button class="btn"  id="product-btn"><i class="fa fa-heart" aria-hidden="true"></i> Add To WishList</button>
+          <br><br>
+          <p>Moisturizing Fairness cream
+            Enriched with Tri-Fair Vitamin Complex, this moisturizing cream targets your dark spots and uneven skin tone to give you blemish-free and fair skin.            
+          </p>  
+            <h4 class="text-shadow">BENEFITS</h4>
+            <p><i class="fa fa-check-circle" aria-hidden="true"></i> Clear, fair skin</p>
+            <p><i class="fa fa-check-circle" aria-hidden="true"></i> Soft, supple skin</p>
+            <p><i class="fa fa-check-circle" aria-hidden="true"></i> Sun protection</p>
+            <button class="btn" id="see-more-btn">Go See More <i class="fa fa-angle-double-right fa-lg mt-1 ml-2 " style="color:black"></i> </button><br><br>
+          </div>
+        </div>
+          </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+<!-- Modal 3 -->
+<div class="modal fade" id="exampleModalLong2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-full-width" role="document">
+    <div class="modal-content modal-content-full-width">
+      <div class="modal-body" id="expert-mod-3">
+        <button type="button" class="modal-close position-fixed " data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true" style="font-size: 50px;">&times;</span>
+        </button>
+          <div class="container">
+            <h1 class="text-center text-shadow" style="font-family: 'Cinzel', serif; color:black">Men's Solution</h1><br>
+            <div class="row border" id="internal-card">
+            <div class="col-sm-6 text-center">
+              <img src="https://www.fairandlovely.ae/wp-content/uploads/sites/15/2016/09/product-ma-x_fairness-moisturizer_min.png" class="img-fluid">
+              <div style="background-color: #cc0066;">MRP :- Rs 190</div><br>
+            </div>
+            <div class="col-sm-6 padding-for-modal">
+            <h3 class="text-shadow"><span class="badge badge-danger">1</span> MAX FAIRNESS MULTI-EXPERT CREAM</h3><br>
+            <button class="btn" id="product-btn"><i class="fa fa-shopping-cart" aria-hidden="true"></i> Add To Cart</button> <button class="btn"  id="product-btn"><i class="fa fa-heart" aria-hidden="true"></i> Add To WishList</button>
+            <button class="btn"  id="product-btn"  data-toggle="collapse" data-target="#demo4"><i class="fa fa-video"></i> Watch Video</button><br><br>
+            <div  id="demo4" class="row collapse">
+              <iframe width="90%" class="ml-3" height="280px" src="https://www.youtube.com/embed/0MUwoJYGuAw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              </div>
+            <br><br>
+            <p>Multi-Expert™ Solution for a Fair and Confident Face
+              Fair and Lovely MEN Max Fairness Multi-Expert Fairness Cream.              
+              </p>
+              <h4 class="text-shadow">BENEFITS</h4>
+              <p><i class="fa fa-check-circle" aria-hidden="true"></i> Fairness Expert makes you visibly fairer</p>
+              <p><i class="fa fa-check-circle" aria-hidden="true"></i> Sun Expert: Protection from UVA/UVB rays</p>
+              <p><i class="fa fa-check-circle" aria-hidden="true"></i> Oil Control Expert for Oil Free Look </p>
+              <button class="btn" id="see-more-btn">Go See More <i class="fa fa-angle-double-right fa-lg mt-1 ml-2 " style="color:black"></i> </button><br><br>
+            </div>
+          </div>
+          
+          </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Videos section -->
+
+<div class="jumbotron" id="latest-news">
+   <h1 class="text-center shadow" style="font-family: 'Cinzel', serif;">LATEST NEWS</h1><br><br>
+   <div class="row text-center">
+     <div class="col">
+      <iframe  src="https://www.youtube.com/embed/p9oJrnP3p0A" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </iframe>
+      
+     </div>
+     <div class="col">
+      <iframe  src="https://www.youtube.com/embed/mcI1y5UPN_Y" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      
+     </div>
+     <div class="col">
+      <iframe  src="https://www.youtube.com/embed/p9oJrnP3p0A" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </iframe>
+      
+     </div>
+     <div class="col">
+      <iframe  src="https://www.youtube.com/embed/mcI1y5UPN_Y" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      
+     </div>
+   </div>
+</div>
+
+<!-- Section 1 -->
+
+<div class="jumbotron section31">
+<h1 class="text-center  shadow" style="font-family: 'Cinzel', serif;"> FACE UPTO FAIRNESS</h1><br>
+<p class="text-center">Watch our beauty bloggers exchange ideas and tips, or join the conversation with our fairness experts.</p>
+<div class="row shadow ">
+  <div class="col-sm-6 border sec1" >
+    <div class="row">
+      <div class="col-sm-6 pt-4">
+        <h3 class="theme-pink text-shadow">FAIRNESS TIPS</h3>
+        <p> Discover tips on fairness from our top bloggers Kritika and Priyal. </p>
+        <button class="btn btn-success">#BeautyonDuty <i class="fa fa-angle-double-right fa-lg mt-1 ml-2 " style="color:white"></i></button>
+      </div>
+        <div class="col-sm-6"><img src="https://www.fairandlovely.ae/wp-content/uploads/sites/15/2016/01/img11_min.png" class="img-fluid pt-3"></div>
+        
+  </div>
+  </div>
+  <div class="col-sm-6 border sec2">
+    <div class="row">
+      <div class="col-sm-6 pt-4">
+        <h3 class="theme-pink text-shadow">GOT A QUESTION?</h3>
+        <p>See our Experts' answers to common skin and fairness problems. </p>
+        <button class="btn btn-success">Ask the Experts <i class="fa fa-angle-double-right fa-lg mt-1 ml-2 " style="color:white"></i></button>
+      </div>
+        <div class="col-sm-6"><img src="https://www.fairandlovely.ae/wp-content/uploads/sites/15/2016/01/ask_the_experts_min.png" class="img-fluid ">
+        </div>
+        
+  </div>
+  </div>
+</div>
+</div>
+
+<!-- Section 2 -->
+
+<div class="jumbotron section32 ">
+  <h1 class="text-center shadow " style="font-family: 'Cinzel', serif;"> POWERFUL TECHNOLOGY, POTENT SCIENCE</h1><br>
+  <p class="text-center">See how technology powers skin transformation or experience it with the fairness analysis in our Smart Clinic.</p>
+  <div class="row shadow">
+    <div class="col-sm-6 border sec3">
+      <div class="row">
+        <div class="col-sm-6 pt-4">
+          <h3 class="theme-pink text-shadow">ANALYSE YOUR SKIN</h3>
+          <p> Analyse and measure your fairness. See how Fair & Lovely’s treatment-like fairness can transform your skin.  </p>
+          <button class="btn btn-success">Smart Fairness Clinic <i class="fa fa-angle-double-right fa-lg mt-1 ml-2 " style="color:white"></i></button>
+        </div>
+          <div class="col-sm-6"><img src="https://www.fairandlovely.ae/wp-content/uploads/sites/15/2016/01/smartclinic-app_updated_min.png" class="img-fluid pt-3"></div>
+          
+    </div>
+    </div>
+    <div class="col-sm-6 border sec4">
+      <div class="row">
+        <div class="col-sm-6 pt-4">
+          <h3 class="theme-pink text-shadow">SCIENCE BEHIND THE TRANSFORMATION</h3>
+          <p>Understand the science that powers our skin lightening expertise </p>
+          <button class="btn btn-success">Skin Science <i class="fa fa-angle-double-right fa-lg mt-1 ml-2 " style="color:white"></i></button>
+        </div>
+          <div class="col-sm-6"><img src="https://www.fairandlovely.ae/wp-content/uploads/sites/15/2016/01/skin_science_min.png" class="img-fluid ">
+          </div>
+          
+    </div>
+    </div>
+  </div>
+  </div>
+
+  <!-- Section 3 -->
+
+  <br>
+  <div class="jumbotron section33">
+    <h1 class="text-center shadow  "  style="font-family: 'Cinzel', serif;">TRANSFORMING FACES AND IMPACTING LIVES</h1><br>
+    <p class="text-center">Fair & Lovely is the world's first safe skin lightening cream, trusted and used by millions worldwide. See how it has transformed the lives of women through the years.</p>
+    <div class="row shadow">
+      <div class="col-sm-6 border sec5">
+        <div class="row">
+          <div class="col-sm-6 pt-4">
+            <h3 class="theme-pink text-shadow">THE FAIR & LOVELY STORY</h3>
+            <p> Learn how we have transformed Skin Tones of women over the last 40 years. </p>
+            <button class="btn btn-success">Our Story <i class="fa fa-angle-double-right fa-lg mt-1 ml-2 " style="color:white"></i></button>
+          </div>
+            <div class="col-sm-6"><img src="https://www.fairandlovely.ae/wp-content/uploads/sites/15/2016/01/img3a_min.png" class="img-fluid pt-3"></div>
+            
+      </div>
+      </div>
+      <div class="col-sm-6 border sec6">
+        <div class="row">
+          <div class="col-sm-6 pt-4">
+            <h3 class="theme-pink text-shadow">ENABLING WOMEN FOR GENERATIONS </h3>
+            <p>Learn how Fair & Lovely has helped transform women's lives over the years.</p>
+            <button class="btn btn-success">Fair & Lovely Foundation <i class="fa fa-angle-double-right fa-lg mt-1 ml-2 " style="color:white"></i></button>
+          </div>
+            <div class="col-sm-6"><img src="https://www.fairandlovely.ae/wp-content/uploads/sites/15/2016/01/fal_foundation-2_min.png" class="img-fluid ">
+            </div>
+            
+      </div>
+      </div>
+    </div>
+    </div>
+
+  <!-- What UI means To Me -->
+
+    <div class="jumbotron" id="ui-means">
+      <div class="container-fluid">
+        <h1 class="text-center shadow "  style="font-family: 'Cinzel', serif;">WHAT UI MEANS TO US?</h1><br>
+       <div class="row">
+        <div class="col-sm-4 my-auto">
+          <img src="https://previews.123rf.com/images/artinspiring/artinspiring1804/artinspiring180400338/99276592-ui-and-ux-design-in-cartoon-illustration-.jpg" class="img-fluid">
+        </div>
+         <div class="col-sm-8">
+           <p>
+             User Interface(UI) for us is a way to potray  our product at its best, so as our users can enjoy 
+             browsing through our website and also get the entire knowledge of the the product we sell.
+             It is nothing but what we see on a website or the visuals. So if visuals are mesmerising, attractive 
+             & happening we tend to create a space in the customer's mind, so he remembers and visits our site again.
+           </p>
+           <p>
+             UI is the way we can interact with our customers or make them happy and content. 
+             Our UI is planned in such a way that the customer gets the best user experience(UX).
+             UI includes the study of personas. As many categories of users visit our site, we tend to keep them intact.
+            Hence, we do it through our website, by making the website browsing less tedious and entertaining through animations,
+            creating interactive sessions, videos, alluring colours and many more. 
+             With UI not only we can promote a business but also cheer up a person who is 
+             restless, angry and impatient. He/She can take a moment to see the website & 
+             interact , enjoy themselves & most importantly makes them patient to scroll 
+             through the content of the page which improves the conversion rate.
+           </p>
+           <p>
+            Smart implementation of common UI patterns will help us to create a pleasant shopping experience, guiding your
+            customers through the site and helping them find what they need without any inconveniences.
+           </p>
+         </div>
+       </div>
+     </div>
+    </div>
+<br>
+    <!-- ContactUs -->
+<div class="container-fluid" id="contact-us">
+  <br>
+  <div class="container">
+  <div class="row">
+    <div class="col-sm-5">
+      <i class="fa fa-home theme-white"></i> 3-5-1026, Narayanaguda<br>
+      Hyderabad-500029<br>
+      Telangana, India.<br>
+      <i class="fa fa-envelope theme-white" aria-hidden="true"></i> info@kmit.in<br>
+      <i class="fa fa-phone-square theme-white" aria-hidden="true"></i> 040-23261407<br><br>
+      <div class="row">
+      <iframe height="250px" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d60916.86388301428!2d78.490038!3d17.397193000000005!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x8aa5456a7d836bb5!2sKeshav%20Memorial%20Institute%20Of%20Technology!5e0!3m2!1sen!2sus!4v1599839639260!5m2!1sen!2sus" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe></div>
+    </div>
+    <div class="col-sm-2"></div>
+    <div class="col-sm-5">
+      <br>
+      <div class="social-media"><i class="fa fa-facebook-square fa-2x" aria-hidden="true"></i> <i class="fa fa-twitter fa-2x" aria-hidden="true"></i> <i class="fa fa-instagram fa-2x" aria-hidden="true"></i> <i class="fa fa-youtube fa-2x" aria-hidden="true"></i><br><br></div>
+      <form>
+      Name: <input class="form-control" type="text" placeholder="Enter your name"><br>
+      Email Id: <input class="form-control" type="text" placeholder="Enter your Email"><br>
+      Phone No: <input class="form-control" type="text" placeholder="Enter your phone number"><br>
+      <button class="btn btn-primary btn-block">Submit</button>
+    </form>
+    </div>
+   </div>
+  </div>
+</div>
+
+
+
+
+<!-- Login & Signup Modal -->
+<div class="modal fade" id="loginmodal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-body" id="loginmodbody">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+        
+      <!-- Nav tabs -->
+<ul class="nav nav-tabs">
+  <li class="nav-item">
+    <a class="nav-link active" data-toggle="tab" href="#home">Login</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" data-toggle="tab" href="#menu1">Sign Up</a>
+  </li>
+</ul>
+
+<!-- Tab panes -->
+<div class="tab-content">
+  <div class="tab-pane container active" id="home"><br>
+    <h1 class="text-center theme-pink" style="font-family: 'Cinzel', serif;">  Login </h1>
+    <form>
+      <span class="theme-pink">Name:</span>
+    <input class="form-control" type="text" placeholder="Enter your Name">
+    <span class="theme-pink"> Password:</span>
+    <input class="form-control" type="password"  placeholder="Enter your Password"><br>
+    <button class="btn btn-primary btn-block">Submit</button>
+  </form>
+  <a href="#" class="pull-right theme-white">Forgot Password?</a><br><br>
+  <button class="btn btn-block btn-fb">
+    <img src="https://www.iconfinder.com/data/icons/capsocial-round/500/facebook-512.png" height="40px"> Login With Facebook
+  </button>
+  <h6 class="text-center">or</h6>
+  <button class="btn btn-block btn-gog">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/0/09/IOS_Google_icon.png" height="40px"> Login With Google
+  </button><br>
+ 
+  </div>
+  <div class="tab-pane container fade" id="menu1"><br>
+    <h1 class="text-center" style="font-family: 'Cinzel', serif;">  Sign Up </h1>
+    <form>
+    <span>Name:</span>
+    <input class="form-control" type="text"  placeholder="Enter your Name">
+    <span> Password:</span>
+    <input class="form-control" type="password" placeholder="Enter your Password" >
+    <span> Conirm Password:</span>
+    <input class="form-control" type="password" placeholder="Re-Enter your Password" ><br>
+    <button class="btn btn-primary btn-block">Submit</button>
+  </form>
+  <a href="#" class="pull-right">Forgot Password?</a><br><br>
+  <button class="btn btn-block btn-fb">
+    <img src="https://www.iconfinder.com/data/icons/capsocial-round/500/facebook-512.png" height="40px"> Sign Up With Facebook
+  </button>
+  <h6 class="text-center">or</h6>
+  <button class="btn btn-block btn-gog">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/0/09/IOS_Google_icon.png" height="40px"> Sign Up With Google
+  </button><br>
+   
+  </div>
+
+</div>
+
+      </div>
+    </div>
+  </div>
+</div>
+    <!-- Footer -->
+
+    <footer id="bla">
+      <div class="footer-copyright py-3 text-center">
+        <div class="container-fluid">
+        <span class="theme-white">  © 2020 . Copyright Reserved  </span>
+  
+        </div>
+      </div>
+  </footer>
+</body>
+</html>
